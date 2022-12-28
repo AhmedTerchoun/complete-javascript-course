@@ -182,3 +182,38 @@ myCountry['population'] -= 2000000;
 console.log(myCountry);
 
 myCountry.describe();
+
+//iteration: the for loop
+
+for (let i = 0; i < 50; i++) {
+    console.log('Voter Number ' + i + ' is currently voting');;
+}
+
+//looping arrays, Breaking and Continuing
+let percentages2 = [];
+for (let i = 0; i < populations.length; i++) {
+    percentages2[i] = percentageOfWorld1(populations[i]);
+}
+
+console.log(percentages2);
+console.log(percentages);
+
+//looping backwards and Loops in Loops
+
+let listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
+    'Russia']];
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+    for (let j = 0; j < listOfNeighbours[i].length; j++) {
+        console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+    }
+}
+
+//The While Loop
+let percentages3 = [];
+let i = 0;
+while (i < populations.length) {
+    percentages3[i] = percentageOfWorld1(populations[i])
+    i++;
+}
+console.log(percentages3);
